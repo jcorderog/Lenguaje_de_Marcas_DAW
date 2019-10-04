@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionario>
+    <marcas>
+        <marca nombre="Renault" pais_procedencia="Francia">
+            <coches>
+                <coche matricula="6135 JDP" año_matriculacion="2012" modelo="Kadjar" numero_plazas="5" cc="150"/>
+            </coches>
+        </marca>
+        <marca nombre="Opel" pais_procedencia="Alemania">
+                <coches>
+                    <coche matricula="3496 HDP" año_matriculacion="2005" modelo="Corsa" numero_plazas="5" cc="60"/>
+                </coches>
+        </marca>
+        <marca nombre="Seat" pais_procedencia="España">
+                <coches>
+                    <coche matricula="3496 LNW" año_matriculacion="2017" modelo="León Cupra" numero_plazas="5" cc="300"/>
+                </coches>
+        </marca>
+        <marca nombre="BMW" pais_procedencia="Alemania">
+                <coches>
+                    <coche matricula="3491 GWN" año_matriculacion="2018" modelo="Serie 3" numero_plazas="5" cc="150"/>
+                </coches>
+        </marca>
+        <marca nombre="Audi" pais_procedencia="Alemania">
+                <coches>
+                    <coche matricula="3493 JFO" año_matriculacion="2015" modelo="A3" numero_plazas="5" cc="100"/>
+                </coches>
+        </marca>
+    </marcas>
+</concesionario>

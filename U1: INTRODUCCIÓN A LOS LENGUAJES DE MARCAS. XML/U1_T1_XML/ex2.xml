@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centro_comercial>
+    <tiendas>
+        <tienda nombre="HyM" metros_cuadrados="250 m2">
+            <parcelas>
+                <parcela numero="1" metros_cuadrados="100"/>
+                <parcela numero="2" metros_cuadrados="150"/>  
+            </parcelas>
+            <encargado nombre="Juan Carlos" apellidos="Ortíz Cordero" telefono="647534467" NSS="28 12345678 40"/>
+        </tienda>
+        <tienda nombre="Pull and Bear" metros_cuadrados="200">
+                <parcelas>
+                    <parcela numero="3" metros_cuadrados="200"/>
+                </parcelas>
+                <encargado nombre="Antonio" apellidos="Rodriguez Mesa" telefono="667519435" NSS="38 12344578 20"/>
+        </tienda>
+        <tienda nombre="Kiabi" metros_cuadrados="100">
+                <parcelas>
+                    <parcela numero="4" metros_cuadrados="100"/>
+                </parcelas>
+                <encargado nombre="Manuel" apellidos="Gómez Cordero" telefono="664723389" NSS="28 12225678 21"/>
+        </tienda>
+        <tienda nombre="JVZ" metros_cuadrados="100">
+            <parcelas>
+                <parcela numero="5" metros_cuadrados="100"/>
+            </parcelas>
+            <encargado nombre="Luis" apellidos="Marquez Gómez" telefono="664238861" NSS="28 12314678 46"/>
+        </tienda>
+        <tienda nombre="ZARA" metros_cuadrados="400">
+                <parcelas>
+                    <parcela numero="6" metros_cuadrados="200"/>
+                    <parcela numero="7" metros_cuadrados="200"/>  
+                </parcelas>
+                <encargado nombre="María" apellidos="Muñoz Cordero" telefono="667923348" NSS="68 12467278 42"/>
+        </tienda>
+        <tienda nombre="ZARA Home" metros_cuadrados="150">
+                <parcelas>
+                    <parcela numero="9" metros_cuadrados="150"/>
+                </parcelas>
+                <encargado nombre="María" apellidos="Gordillo Gameiro" telefono="663486916" NSS="38 12356678 40"/>
+        </tienda>
+        <tienda nombre="Tiger" metros_cuadrados="100">
+                <parcelas>
+                    <parcela numero="8" metros_cuadrados="100"/> 
+                </parcelas>
+                <encargado nombre="Luisa" apellidos="Cordero Casado" telefono="664839951" NSS="28 12344678 40"/>
+        </tienda>
+        <tienda nombre="CyA" metros_cuadrados="150">
+                <parcelas>
+                    <parcela numero="10" metros_cuadrados="100"/>
+                    <parcela numero="11" metros_cuadrados="50"/>  
+                </parcelas>
+                <encargado nombre="Manuel" apellidos="Casado Real" telefono="663549961" NSS="28 12556678 40"/>
+        </tienda>
+        <tienda nombre="Game" metros_cuadrados="50">
+                <parcelas>
+                    <parcela numero="12" metros_cuadrados="50"/>
+                </parcelas>
+                <encargado nombre="Martin" apellidos="Cordero Casado" telefono="661479354" NSS="28 12366678 40"/>
+        </tienda>
+        <tienda nombre="JD Sport" metros_cuadrados="200">
+                <parcelas>
+                    <parcela numero="13" metros_cuadrados="200"/>
+                </parcelas>
+                <encargado nombre="José Manuel" apellidos="Rastrojo Cordero" telefono="647531932" NSS="28 12643198 40"/>
+        </tienda>
+    </tiendas>
+</centro_comercial>

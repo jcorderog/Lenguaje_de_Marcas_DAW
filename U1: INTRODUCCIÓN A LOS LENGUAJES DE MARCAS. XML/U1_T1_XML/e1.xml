@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libro titulo="El señor de los anillos" editorial="anaya" numero_paginas="1790" autor="JRR Tolkien">
+    <capitulos>
+        <capitulo numero="1" titulo="Muchos Encuentros" pagina_inicio="1" pagina_final="50"/>
+        <capitulo numero="2" titulo="El Concilio de Elrond" pagina_inicio="51" pagina_final="150"/>
+        <capitulo numero="3" titulo="El Anillo va al Sur" pagina_inicio="151" pagina_final="250"/>
+        <capitulo numero="4" titulo="Un Viaje en la Oscuridad" pagina_inicio="251" pagina_final="400"/>
+        <capitulo numero="5" titulo="El Puente de Khazad-dûm" pagina_inicio="401" pagina_final="550"/>
+        <capitulo numero="6" titulo="Lothlórien" pagina_inicio="551" pagina_final="800"/>
+    </capitulos>
+</libro>
