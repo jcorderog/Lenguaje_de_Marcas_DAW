@@ -21,7 +21,7 @@ Realizar un DTD y el XML Schema que validen el siguiente XML.
 Realizar un DTD y el XML Schema que validen el siguiente XML.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?
+<?xml version="1.0" encoding="UTF-8"?>
 <students>
  <student dni="11111111A">
   <name>Juan Andrés</name>
