@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE students SYSTEM "Ej2.dtd"> -->
+
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ej2.xsd">
+	<student dni="11111111A">
+		<name>
+			Juan Andrés
+		</name>
+		<address>
+			<street>
+				Avenida de la Fuente
+			</street>
+			<number>
+				6
+			</number>
+			<city>
+				Dos Hermanas
+			</city>
+			<province>
+				Sevilla
+			</province>
+		</address>
+		<phone>
+			954556677
+		</phone>
+	</student>
+	<student dni="22222222B">
+		<name>
+			Jose Sanchez
+		</name>
+		<address>
+			<street>
+				Calle AnchaiceCreamShop
+			</street>
+			<number>
+				3
+			</number>
+			<city>
+				Santa Fe
+			</city>
+			<province>
+				Granada
+			</province>
+		</address>
+		<address>
+			<street>
+				Calle Mayor
+			</street>
+			<number>
+				33
+			</number>
+			<city>
+				Alcalá de Guadaira
+			</city>
+			<province>
+				Sevilla
+			</province>
+		</address>
+		<phone>
+			955550000
+		</phone>
+	</student>
+</students>

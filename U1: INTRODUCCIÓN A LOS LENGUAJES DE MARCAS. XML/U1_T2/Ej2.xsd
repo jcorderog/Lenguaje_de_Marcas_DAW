@@ -1,0 +1,34 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+    <xs:element name="students">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="address" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="street" type="xs:string"/>
+                                        <xs:element name="number" type="xs:positiveInteger"/>
+                                        <xs:element name="city" type="xs:string"/>
+                                        <xs:element name="province" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="phone" type="xs:positiveInteger"/>
+                        </xs:sequence>
+                        <xs:attribute name="dni" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[0-9]{8}[A-Z]"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>    
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
