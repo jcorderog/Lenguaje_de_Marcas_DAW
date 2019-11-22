@@ -1,0 +1,12 @@
+body{
+    width: 50%;
+}
+body h1,h2,h3,strong,em,li>ul>li,a:visited,td,input {
+    color: red;
+}
+body td.location,form {
+    color: blue;
+}
+body input:hover{
+    border-color: grey;
+}

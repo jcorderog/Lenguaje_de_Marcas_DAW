@@ -1,0 +1,20 @@
+table{
+    border-collapse: collapse;
+}
+th,td {
+    border-bottom: 1px solid black;
+}
+tbody tr:nth-child(even){
+    background-color: green;
+}
+tbody tr:nth-child(odd){
+    background-color: blueviolet;
+}
+thead {
+    background-color: black;
+    color: white;
+}
+tbody tr:hover {
+    background-color: red;
+    color: blue;
+}
