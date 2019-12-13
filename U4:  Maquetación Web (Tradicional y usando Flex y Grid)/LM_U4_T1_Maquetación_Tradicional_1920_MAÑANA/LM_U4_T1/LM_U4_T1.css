@@ -1,0 +1,110 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+header p {
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+
+#menu {
+    margin-bottom: 15px;
+}
+
+#menu ul {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding-left: 20px;
+}
+
+#menu li {
+    display: inline-block;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+#menu li:hover {
+    background-color: white;
+    color: black;
+}
+
+.divAnchos,
+#centro {
+    float: left;
+}
+
+.divAnchos {
+    width: 25%;
+}
+
+#centro {
+    width: 50%;
+}
+
+h4 {
+    background-color: black;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#menu2 ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu2 li {
+    list-style: none;
+    padding: 5px;
+}
+
+#ultimoLI {
+    height: 150px;
+}
+
+.gray {
+    background-color: gray;
+}
+
+#centro div {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    background-color: gray;
+    padding: 5px;
+}
+
+div>img {
+    height: 100%;
+    width: 100%;
+}
+
+div>p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container>div {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+footer {
+    clear: both;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
