@@ -63,11 +63,11 @@ Usando el siguiente código HTML
 
 Dotarla de estilos para conseguir la siguiente imagen:
 
-![GitHub Logo](layout.png)
+![GitHub Logo](./img/layout.png)
 
 
 Al pasar por las opciones del menú superior el colore de fondo será blanco y el color de letra negro.
 
 Usad la siguiente imagen:
 
-![GitHub Logo](anonymous.jpg)
+![GitHub Logo](./img/anonymous.jpg)
