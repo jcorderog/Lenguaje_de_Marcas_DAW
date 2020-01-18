@@ -1,0 +1,106 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "Brandon Grotesque";
+    src: url("./brand_ssv/Brandon_reg.otf");
+}
+.container{
+    background-color: rgb(207, 206, 206);
+    font-family: "Brandon Grotesque";
+}
+.container header {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    height: 50px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.container>div {
+    text-align: center;
+}
+.info {
+    height: 640px;
+}
+.info section {
+    float: left;
+    height: 70%;
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.info section img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.info form{
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 10px;
+}
+form table {
+    width: 100%;
+}
+button {
+    background-color: rgb(94, 0, 69);
+    border-color: rgb(94, 0, 69);
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    width: 98%;
+}
+select {
+    width: 98%;
+}
+form input {
+    width: 98%;
+}
+#form-title {
+    text-align: center;
+}
+.opinions {
+    height: 400px;
+    clear: left;
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 30px;
+}
+.opinions>div {
+    float: left;
+    height: 100%;
+    text-align: center;
+    width: 32%;
+}
+.opinions img {
+    height: 60%;
+    border-radius: 100%;
+    width: 50%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.opinions p {
+    height: 10%;
+    text-align: left;
+}
+.opinions ul {
+    height: 15%;
+    text-align: left;
+}
+#centro {
+    margin-left: 2%;
+    margin-right: 2%;
+}
