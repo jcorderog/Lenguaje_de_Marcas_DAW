@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+}
+
+header div, header aside{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+header div img {
+    width: 50%;
+    height: 100%;
+}
+
+header aside {
+    text-align: right;
+}
+
+header aside img {
+    width: 5%;
+    height: 25px;
+}
+
+nav {
+    background-color: rgba(255, 0, 157, 0.89);
+    height: 50px;
+    color: white;
+    padding-top: 17px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+nav ul li:hover {
+    color: rgba(255, 0, 157, 0.89);
+    background-color: white;
+}
+
+nav ul, main>div:nth-child(1) p, main>div:nth-child(1) h3, footer p {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li{
+    
+    display: inline-block;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 100%;
+}
+
+main {
+    height: 550px;
+}
+
+main>div {
+    float: right;
+}
+
+main>div:nth-child(1){
+    width: 28%;
+    height: 100%;
+}
+
+main>div:nth-child(2){
+    width: 72%;
+    padding-right: 15px;
+    height: 550px;
+}
+
+main>div:nth-child(1) img {
+    width: 100%;
+}
+
+.galeria {
+    position: relative;
+    color: rgba(255, 0, 157, 0.89);
+    height: 200px;
+}
+
+.galeria img  {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+.puntos {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+}
+
+.fechaDerecha{
+    position: absolute;
+    z-index: 5;
+    right: 0px;
+}
+
+.fechaIzquierda{
+    position: absolute;
+    z-index: 5;
+    left: 0px;
+}
+
+.galeria div:nth-child(1){
+    left: 50px;
+    bottom: 0px;
+    z-index: 1;
+    position: absolute;
+}
+
+.info {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 40px;
+}
+
+.info div {
+    border: 1px solid rgba(255, 0, 157, 0.89);
+    border-radius: 20px;
+    float: left;
+    height: 240px;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    width: 29%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.info img {
+    width: 100%;
+}
+
+footer {
+    background-color: rgba(255, 0, 157, 0.89);
+    clear: left;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
