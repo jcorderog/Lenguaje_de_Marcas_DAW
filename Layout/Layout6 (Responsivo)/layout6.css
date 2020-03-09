@@ -1,0 +1,520 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(41, 83, 85);
+    width: 100%;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    font-family: 'Carter One', cursive;
+}
+
+.top {
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+
+header{
+    width: 70%;
+    height: 80px;
+    display: flex;
+    margin: 0px auto;
+    order: 2;
+}
+
+/*----Busqueda-----*/
+
+.busqueda {
+    width: 50%;
+    margin-top: 20px;
+}
+
+input[type="search"]{
+    width: 45px; /*ancho por defecto*/
+    background: #ededed url('./img/lupa.png') no-repeat 6px center; /*icono lupa*/
+    background-size: 30px 30px;
+    padding: 9px 10px 9px 33px;
+    border-radius: 15em;
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+}
+input[type="search"]:focus{
+    width: 95%; /*tamaño del boton buscar al hacer click*/
+    padding-left: 9px; /*espacio entre el icono lupa y el placeholder*/
+    color: #000;
+    background: none;
+    background-color: #FFF;
+    
+}
+
+header h1 {
+    width: 80%;
+    padding-right: 20px;
+}
+
+/*---Menu---*/
+
+#check {
+    display: none;
+}
+
+.menu{
+    padding: 10px 5px;
+    order: 1;
+    width: 30%;
+    margin-top: 18px;
+    height: 45px;
+    z-index: 100;
+}
+
+.menu label{
+    display: block;
+    width: 35%;
+    padding-left: 15px;
+}
+
+.lista-menu {
+    display: none;
+    width: 0px;
+}
+
+.lista-menu ul{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+.lista-menu li {
+    padding: 5px 5px;
+}
+
+.lista-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista-menu li:hover {
+    background-color: rgb(0, 82, 72);
+}
+
+#check:checked ~ .lista-menu{
+    display: block;
+    width: 100px;
+    background-color: rgb(44, 130, 145);    
+}
+
+/*-----------------Cuerpo-----------------*/
+
+.body {
+    z-index: -1;
+    width: 95%;
+    margin: 25px auto;
+}
+
+p, header h1, ul{
+    color: rgb(92, 138, 143);
+}
+
+header h1,ul, h3,nav p {
+    font-style: italic;
+}
+
+.body > div:nth-child(6) div:nth-child(2) div h3{
+    color: rgb(66, 97, 100);
+}
+
+/*---1ºCaja---*/
+
+.body>div:nth-child(1) {
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: rgb(1, 146, 204);
+    margin-bottom: 10px;
+}
+
+.body>div:nth-child(1) h2{
+    margin-bottom: 5px;
+}
+
+.body>div:nth-child(1) h4{
+    margin: 0px;
+}
+
+.body>div:nth-child(1) img {
+    width: 30%;
+    height: 100px;
+    margin: 10px;
+}
+
+.body>div:nth-child(1)>img:nth-child(6), .body>div:nth-child(1)>img:nth-child(5){
+    display: none;
+    width: 0px;
+}
+
+/*---2ºCaja---*/
+
+nav {
+    width: 100%;
+}
+
+nav button {
+    width: 80%;
+    height: 30px;
+    margin: 0px 10%;
+    color: white;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background-color: rgb(18, 107, 107);
+    border-color: rgb(19, 102, 102);
+}
+
+.body>div {
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(172, 213, 226);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.body>div>div:nth-child(1) {
+    width: 100%;
+    background-color: rgb(92, 138, 143);
+    color: rgb(231, 231, 231);
+    height: 40px;
+    border-radius: 4px 4px 0px 0px;
+    display: flex;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    -moz-border-radius: 4px 4px 0px 0px;
+    -ms-border-radius: 4px 4px 0px 0px;
+    -o-border-radius: 4px 4px 0px 0px;
+}
+
+.body>div>div:nth-child(1) img{
+    width: 25px;
+    height: 25px;
+    margin: 7.5px 10px;
+}
+
+.body>div>div:nth-child(1) h3{
+    height: 20px;
+    margin: 10px 0px;
+    line-height: 1;
+}
+
+/*---3ºCaja---*/
+
+.body>div:nth-child(3) div:nth-child(2) {
+    width: 100%;
+    padding: 5px 20px;
+}
+
+/*---4ºCaja---*/
+
+.body>div:nth-child(4)>div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.body>div:nth-child(4) div:nth-child(2) img{
+    width: 30%;
+    height: 100px;
+    margin: 5px 0px;
+}
+
+/*---5ºCaja---*/
+
+.body>div:nth-child(5)>div:nth-child(2) {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.body>div:nth-child(5)>div:nth-child(2) p{
+    width: 100%;
+}
+
+/*---6ºCaja---*/
+
+.body>div:nth-child(6) div:nth-child(2) div {
+    display: grid;
+    grid-template-columns: 25% 75% ;
+    grid-template-rows: 25% 75%;
+    margin: 15px 10px;
+    grid-column-gap: 5%;
+}
+
+.body>div:nth-child(6) div:nth-child(2) div img{
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 0;
+    height: 50%;
+}
+
+.body>div:nth-child(6) div:nth-child(2) div h3{
+    width: 75%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0;
+    height: 100%;
+}
+.body>div:nth-child(6) div:nth-child(2) div p{
+    width: 75%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0;
+    height: 100%;
+}
+
+@media (min-width: 576px){
+
+    .top {
+        height: auto;
+        width: 95%;
+        display: block;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header h1 {
+        width: 70%;
+    }
+
+    .busqueda {
+        width: 30%;
+    }
+
+    input[type="search"]{
+        width: 70%; /*ancho por defecto*/
+    }
+
+    input[type="search"]:focus{
+        width: 70%; /*tamaño del boton buscar al hacer click*/
+    }
+
+    .menu label{
+        display: none;
+    }
+
+    .menu{
+        padding: 0px 0px;
+        width: 100%;
+        margin-top: 18px;
+        height: 25%;
+        z-index: 100;
+    }
+
+    .lista-menu {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(44, 130, 145);  
+        border-radius: 4px 4px 0px 0px;    
+    }
+
+    .lista-menu ul {
+        display: flex;
+    }
+
+    .lista-menu li {
+        padding: 15px 0px;
+        width: 16.66%;
+    }
+
+    .lista-menu li:hover {
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+
+    .body {
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .body>div:nth-child(1){
+        margin-top: 0px;
+        border-radius: 0px 0px 4px 4px;
+        -webkit-border-radius: 0px 0px 4px 4px;
+        -moz-border-radius: 0px 0px 4px 4px;
+        -ms-border-radius: 0px 0px 4px 4px;
+        -o-border-radius: 0px 0px 4px 4px;
+    }
+
+    .body>div:nth-child(1) h1{
+        margin-top: 0px;
+    }
+
+    .body>div:nth-child(1)>img:nth-child(6), .body>div:nth-child(1)>img:nth-child(5){
+        display: inline;
+        width: 15%;
+    }
+
+    .body>div:nth-child(1) img {
+        width: 15%;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav button {
+        width: 50%;
+        margin: auto;
+        
+    }
+
+    nav p {
+        width: 50%;
+    }
+
+    .body>div:nth-child(3) , .body>div:nth-child(4) {
+        width: 48%;
+        margin: 0px;
+    }
+
+    .body>div:nth-child(6) div:nth-child(2) {
+        display: flex;
+    }
+
+    .body>div:nth-child(6) div:nth-child(2) div {
+        display: grid;
+        grid-template-columns: 35% 65% ;
+        grid-template-rows: 45% 55%;
+        margin: 15px auto;
+        grid-column-gap: 2%;
+        width: 45%;
+    }
+
+    .body>div:nth-child(6) div:nth-child(2) div img{
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0;
+        height: 95%;
+    }
+    
+    .body>div:nth-child(6) div:nth-child(2) div h3{
+        width: 100%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0;
+        height: 100%;
+    }
+    .body>div:nth-child(6) div:nth-child(2) div p{
+        width: 100%;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin: 0;
+        height: 100%;
+    }
+
+}
+
+@media (min-width: 992px){
+
+    header h1 {
+        width: 75%;
+        text-align: left;
+        padding-left: 2%;
+    }
+
+    .busqueda {
+        width: 25%;
+    }
+
+    input[type="search"]{
+        width: 100%; /*ancho por defecto*/
+    }
+
+    input[type="search"]:focus{
+        width: 100%; /*tamaño del boton buscar al hacer click*/
+    }
+
+    .body>div:nth-child(1) {
+        height: 300px;
+    }
+
+    .body>div:nth-child(1) h1 {
+        margin-top: 20px;
+    }
+
+    .body>div:nth-child(1) img {
+        height: 60%;
+    }
+
+    .body > div:nth-child(1) > img:nth-child(5), .body>div:nth-child(1)>img:nth-child(6) {
+        width: 15%;
+    }
+
+    nav button {
+        width: 25%;
+        margin: auto; 
+    }
+
+    nav p {
+        width: 75%;
+    }
+
+    .body>div:nth-child(3) , .body>div:nth-child(4), .body>div:nth-child(5) {
+        width: 32%;
+        margin: 0px;
+    }
+
+    .body>div:nth-child(6) div:nth-child(2) div {
+        display: grid;
+        grid-template-columns: 45% 55% ;
+        grid-template-rows: 25% 75%;
+        margin: 15px auto;
+        grid-column-gap: 2%;
+        width: 45%;
+    }
+
+    .body>div:nth-child(6) div:nth-child(2) div img{
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        margin: 0;
+        height: 95%;
+    }
+    
+    .body>div:nth-child(6) div:nth-child(2) div h3{
+        width: 100%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0;
+        height: 100%;
+    }
+    .body>div:nth-child(6) div:nth-child(2) div p{
+        width: 100%;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0;
+        height: 100%;
+    }
+
+}
