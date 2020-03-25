@@ -1,0 +1,137 @@
+.container {
+  width: 90%;
+  margin: 0px auto;
+}
+
+h4 {
+  color: rgba(49, 49, 49, 0.8);
+}
+
+header {
+  background-color: #CCC;
+  color: rgba(49, 49, 49, 0.8);
+  padding: 7px 5%;
+  text-align: right;
+}
+header h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.cuerpo {
+  width: 93%;
+  margin: 0px auto;
+}
+.cuerpo .infoPersonal {
+  height: 165px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 15% 85%;
+  border: 2px solid #CCC;
+  border-radius: 5px;
+  margin-top: 25px;
+  padding: 10px;
+}
+.cuerpo .infoPersonal h4 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: 100%;
+  margin: 0px;
+}
+.cuerpo .infoPersonal div {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-top: 25px;
+}
+.cuerpo .infoPersonal div p {
+  margin: 0px;
+  width: 100%;
+}
+.cuerpo .infoPersonal img {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+}
+.cuerpo div h4 {
+  margin-bottom: 0px;
+}
+.cuerpo div div {
+  background-color: black;
+  height: 2px;
+}
+.cuerpo div ul {
+  padding-left: 0px;
+}
+.cuerpo div ul li {
+  margin-left: 8%;
+}
+.cuerpo div ul li h5 {
+  margin-bottom: 10px;
+}
+.cuerpo div ul li p {
+  margin: 0px;
+}
+.cuerpo div ul li ul {
+  margin-top: 10px;
+}
+.cuerpo .informatica ul {
+  margin-left: 20px;
+}
+
+@media (min-width: 576px) {
+  .cuerpo .infoPersonal {
+    height: 200px;
+  }
+  .cuerpo .infoPersonal div p {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  .cuerpo div ul li ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cuerpo div ul li ul p {
+    width: 100%;
+  }
+  .cuerpo div ul li ul li {
+    width: 40%;
+  }
+  .cuerpo .otros ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+  }
+  .cuerpo .otros ul li {
+    width: 45%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .cuerpo {
+    font-size: 20px;
+  }
+  .cuerpo .infoPersonal {
+    height: 270px;
+  }
+  .cuerpo .infoPersonal h4 {
+    font-size: 30px;
+  }
+  .cuerpo .infoPersonal div p {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  .cuerpo .infoPersonal img {
+    text-align: right;
+    width: 90%;
+  }
+  .cuerpo .otros ul {
+    justify-content: space-evenly;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
