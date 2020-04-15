@@ -1,0 +1,283 @@
+//Generales
+$color-general:#CCC;
+$color-titles:rgba(49, 49, 49, 0.8);
+$container-width: 90%;
+$margin-centrar: 0px auto;
+$padding-general: 0px;
+$margin-general: 0px;
+
+//BreakPoints
+$tablet: 576px;
+$ordenador: 992px;
+
+
+//Lineas
+$line-heigth: 2px;
+$line-background: black;
+
+//Cuerpo
+$cuerpo-width: 93%;
+
+//Img
+$img-radius: 5px;
+$img-width: 100%;
+
+//header
+$header-paddding-laterales: 5%;
+$header-paddding-sup-in: 7px;
+
+//Tabla Modulos 1º DAW
+$color-list: green, red, rgb(240, 51, 161), rgb(0, 204, 255), yellow, grey;
+$num: 1;
+$rows: 6;
+
+//Personalización de Títulos
+$titles: 6;
+$size-leters-list: 35px, 26px, 20px, 18px, 15px, 12px;
+$height-titles-list: 40px, 30px, 25px, 20px, 18px, 15px;
+
+//Asignación Colores tabla Modulos1ºDAW
+@while $num <= $rows {
+    tr:nth-child(#{$num}) {
+        background-color: nth($color-list,$num);
+    }
+    $num: $num+1;
+}
+
+//Personalización de Títulos
+@for $i from 1 through $titles {
+    h#{$i} {
+        font-size: nth($size-leters-list,$i);
+        height: nth($height-titles-list,$i);
+    }
+}
+
+//Función que cambia la anchura del container dependiendo del BreakPoint
+@function calcularAnchura($breakpoint) {
+    @if  $breakpoint == $tablet{
+        @return $container-width + 2%;
+    } @else if $breakpoint == $ordenador {
+        @return $container-width - 2%;
+    }
+}
+
+
+//Tema
+$tema-oscuro: true;
+
+@if $tema-oscuro == true {
+    $color-titles:#CCC;
+    $line-background: white;
+    body{
+        background-color: black;
+        color: white;
+    }
+} @else {
+    $color-general:#CCC;
+    $color-titles:rgba(49, 49, 49, 0.8);
+    $line-background: rgb(39, 39, 39);
+    body{
+        background-color: white;
+        color: black;
+    }
+}
+
+.container {
+    width: $container-width;
+    margin: $margin-centrar;
+}
+
+h4 {
+    color: $color-titles;
+}
+
+header {
+    background-color: $color-general;
+    color: rgba(49, 49, 49, 0.8);
+    padding: $header-paddding-sup-in $header-paddding-laterales;
+    text-align: right;
+    h3 {
+        padding: $padding-general;
+        margin: $margin-general;
+    }
+}
+
+.cuerpo {
+    width: $cuerpo-width;
+    margin: $margin-centrar;
+    .infoPersonal {
+        height: 190px;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 15% 85%;
+        border: 2px solid $line-background ;
+        border-radius: $img-radius;
+        margin-top: 25px;
+        padding: 10px;
+        h4 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            height: 100%;
+            margin: $margin-general;
+        }
+        div {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            margin-top: 25px;
+            p {
+                margin: $margin-general;
+                width: 100%;
+            }
+        }
+        img {
+            grid-column: 2/3;
+            grid-row: 1/3;
+            width: $img-width;
+            border-radius: $img-radius;
+            height: 100%;
+        }
+    }
+
+    div {
+        h4 {
+            margin-bottom: $margin-general;
+        }
+        .linea {
+            background-color: $line-background;
+            height: $line-heigth;
+        }
+        ul {
+            padding-left: $padding-general;
+            li {
+                margin-left: 8%;
+                h5 {
+                    margin-bottom: 10px;
+                    height: auto;
+                }
+                p {
+                    margin: $margin-general;
+                }
+                ul {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .informatica {
+        ul {
+            margin-left: 20px;
+        }
+    }
+    .modulos1DAW{
+        table {
+            margin: 0px auto;
+            margin-top: 15px;
+            border-collapse: collapse;
+            
+            th, td {
+                border: 1px solid $line-background;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+
+    .container{
+        width: calcularAnchura($tablet);
+    }
+
+    .cuerpo {
+        .infoPersonal {
+            height: 200px;
+            div {
+                p {
+                    margin-bottom: 8px;
+                    width: 100%;
+                }
+            }
+        }
+        div {
+            ul {
+                li {
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        p {
+                            width: 100%;
+                        }
+                        li {
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
+        .otros {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                justify-content: space-between;
+                li {
+                    width: 45%;
+                    margin-left: $margin-general;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .modulos1DAW{
+            table {
+                width: 75%;
+                th, td {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (min-width: $ordenador) {
+
+    .container{
+        width: calcularAnchura($ordenador);
+    }
+
+    .cuerpo {
+        font-size: 20px;
+        .infoPersonal {
+            height: 270px;
+            h4 {
+                font-size: 30px;
+            }
+            div {
+                p {
+                    
+                    margin-bottom: 8px;
+                    width: 100%;
+                }
+            }
+            img {
+                width: 90%;
+            }
+        }
+        div {
+            ul {
+                li {
+                    h5 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .otros {
+            ul {
+                justify-content: space-evenly;
+            }
+        }
+    }
+    
+}
