@@ -1,0 +1,15 @@
+//Asignación Colores tabla Modulos1ºDAW
+@while $num <= $rows {
+    tr:nth-child(#{$num}) {
+        background-color: nth($color-list,$num);
+    }
+    $num: $num+1;
+}
+
+//Personalización de Títulos
+@for $i from 1 through $titles {
+    h#{$i} {
+        font-size: nth($size-leters-list,$i);
+        height: nth($height-titles-list,$i);
+    }
+}

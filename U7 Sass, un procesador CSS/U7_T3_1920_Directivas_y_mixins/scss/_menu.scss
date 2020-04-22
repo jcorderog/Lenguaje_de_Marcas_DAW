@@ -1,0 +1,24 @@
+.menu {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: $color-general;
+    position: sticky;
+    top: 0;
+    display: flex;
+    @include centrarLinea;
+    flex-wrap: nowrap;
+    div {
+        padding: 10px;
+        width: 100%;
+        a {
+            text-decoration: none;
+            color: black;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    div:hover {
+        background-color: rgb(116, 116, 116);
+    }
+}
