@@ -1,17 +1,90 @@
-@import "variables";
-@import "estructuras_repetitivas";
-@import "funciones";
-@import "temas";
-@import "mixins";
+//Generales
+$color-general:#CCC;
+$color-titles:rgba(49, 49, 49, 0.8);
+$container-width: 90%;
+$margin-centrar: 0px auto;
+$padding-general: 0px;
+$margin-general: 0px;
+
+//BreakPoints
+$tablet: 576px;
+$ordenador: 992px;
+
+//Lineas
+$line-heigth: 2px;
+$line-background: black;
+
+//Cuerpo
+$cuerpo-width: 93%;
+
+//Img
+$img-radius: 5px;
+$img-width: 100%;
+
+//header
+$header-paddding-laterales: 5%;
+$header-paddding-sup-in: 7px;
+
+//Tabla Modulos 1º DAW
+$color-list: green, red, rgb(240, 51, 161), rgb(0, 204, 255), yellow, grey;
+$num: 1;
+$rows: 6;
+
+//Personalización de Títulos
+$titles: 6;
+$size-leters-list: 35px, 26px, 20px, 18px, 15px, 12px;
+$height-titles-list: 40px, 30px, 25px, 20px, 18px, 15px;
+
+//Asignación Colores tabla Modulos1ºDAW
+@while $num <= $rows {
+    tr:nth-child(#{$num}) {
+        background-color: nth($color-list,$num);
+    }
+    $num: $num+1;
+}
+
+//Personalización de Títulos
+@for $i from 1 through $titles {
+    h#{$i} {
+        font-size: nth($size-leters-list,$i);
+        height: nth($height-titles-list,$i);
+    }
+}
+
+//Función que cambia la anchura del container dependiendo del BreakPoint
+@function calcularAnchura($breakpoint) {
+    @if  $breakpoint == $tablet{
+        @return $container-width + 2%;
+    } @else if $breakpoint == $ordenador {
+        @return $container-width - 2%;
+    }
+}
 
 
+//Tema
+$tema-oscuro: flase;
+
+@if $tema-oscuro == true {
+    $color-titles:#CCC;
+    $line-background: white;
+    body{
+        background-color: black;
+        color: white;
+    }
+} @else {
+    $color-general:#CCC;
+    $color-titles:rgba(49, 49, 49, 0.8);
+    $line-background: rgb(39, 39, 39);
+    body{
+        background-color: white;
+        color: black;
+    }
+}
 
 .container {
     width: $container-width;
-    @include centrarBloque
+    margin: $margin-centrar;
 }
-
-@import "menu";
 
 h4 {
     color: $color-titles;
@@ -30,7 +103,7 @@ header {
 
 .cuerpo {
     width: $cuerpo-width;
-    @include centrarBloque;
+    margin: $margin-centrar;
     .infoPersonal {
         height: 190px;
         display: grid;
@@ -99,7 +172,6 @@ header {
             margin: 0px auto;
             margin-top: 15px;
             border-collapse: collapse;
-            @include centrarLinea;
             
             th, td {
                 border: 1px solid $line-background;
