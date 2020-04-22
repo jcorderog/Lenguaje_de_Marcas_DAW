@@ -1,5 +1,5 @@
 //Tema
-$tema-oscuro: false;
+$tema-oscuro: true;
 
 @if $tema-oscuro == true {
     $color-titles:#CCC;

@@ -62,6 +62,31 @@ body {
   margin: 0px auto;
 }
 
+.menu {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 100%;
+  background-color: #CCC;
+  position: sticky;
+  top: 0;
+  display: flex;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+.menu div {
+  padding: 10px;
+  width: 100%;
+}
+.menu div a {
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+.menu div:hover {
+  background-color: #747474;
+}
+
 h4 {
   color: rgba(49, 49, 49, 0.8);
 }
@@ -143,6 +168,7 @@ header h3 {
   margin: 0px auto;
   margin-top: 15px;
   border-collapse: collapse;
+  text-align: center;
 }
 .cuerpo .modulos1DAW table th, .cuerpo .modulos1DAW table td {
   border: 1px solid #272727;
@@ -219,4 +245,4 @@ header h3 {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles-claro.css.map */
