@@ -1,0 +1,210 @@
+@import "variables";
+@import "estructuras_repetitivas";
+@import "funciones";
+@import "temas";
+@import "mixins";
+
+
+
+.container {
+    width: $container-width;
+    @include centrarBloque
+}
+
+@import "menu";
+
+h4 {
+    color: $color-titles;
+}
+
+header {
+    background-color: $color-general;
+    color: rgba(49, 49, 49, 0.8);
+    padding: $header-paddding-sup-in $header-paddding-laterales;
+    text-align: right;
+    h3 {
+        padding: $padding-general;
+        margin: $margin-general;
+    }
+}
+
+.cuerpo {
+    width: $cuerpo-width;
+    @include centrarBloque;
+    .infoPersonal {
+        height: 190px;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 15% 85%;
+        border: 2px solid $line-background ;
+        border-radius: $img-radius;
+        margin-top: 25px;
+        padding: 10px;
+        h4 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            height: 100%;
+            margin: $margin-general;
+        }
+        div {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            margin-top: 25px;
+            p {
+                margin: $margin-general;
+                width: 100%;
+            }
+        }
+        img {
+            grid-column: 2/3;
+            grid-row: 1/3;
+            width: $img-width;
+            border-radius: $img-radius;
+            height: 100%;
+        }
+    }
+
+    div {
+        h4 {
+            margin-bottom: $margin-general;
+        }
+        .linea {
+            background-color: $line-background;
+            height: $line-heigth;
+        }
+        ul {
+            padding-left: $padding-general;
+            li {
+                margin-left: 8%;
+                h5 {
+                    margin-bottom: 10px;
+                    height: auto;
+                }
+                p {
+                    margin: $margin-general;
+                }
+                ul {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .informatica {
+        ul {
+            margin-left: 20px;
+        }
+    }
+    .modulos1DAW{
+        table {
+            margin: 0px auto;
+            margin-top: 15px;
+            border-collapse: collapse;
+            @include centrarLinea;
+            
+            th, td {
+                border: 1px solid $line-background;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+
+    .container{
+        width: calcularAnchura($tablet);
+    }
+
+    .cuerpo {
+        .infoPersonal {
+            height: 200px;
+            div {
+                p {
+                    margin-bottom: 8px;
+                    width: 100%;
+                }
+            }
+        }
+        div {
+            ul {
+                li {
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        p {
+                            width: 100%;
+                        }
+                        li {
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
+        .otros {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                justify-content: space-between;
+                li {
+                    width: 45%;
+                    margin-left: $margin-general;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .modulos1DAW{
+            table {
+                width: 75%;
+                th, td {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (min-width: $ordenador) {
+
+    .container{
+        width: calcularAnchura($ordenador);
+    }
+
+    .cuerpo {
+        font-size: 20px;
+        .infoPersonal {
+            height: 270px;
+            h4 {
+                font-size: 30px;
+            }
+            div {
+                p {
+                    
+                    margin-bottom: 8px;
+                    width: 100%;
+                }
+            }
+            img {
+                width: 90%;
+            }
+        }
+        div {
+            ul {
+                li {
+                    h5 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .otros {
+            ul {
+                justify-content: space-evenly;
+            }
+        }
+    }
+    
+}

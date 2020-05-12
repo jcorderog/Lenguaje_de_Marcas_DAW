@@ -1,0 +1,19 @@
+//Tema
+$tema-oscuro: true;
+
+@if $tema-oscuro == true {
+    $color-titles:#CCC;
+    $line-background: white;
+    body{
+        background-color: black;
+        color: white;
+    }
+} @else {
+    $color-general:#CCC;
+    $color-titles:rgba(49, 49, 49, 0.8);
+    $line-background: rgb(39, 39, 39);
+    body{
+        background-color: white;
+        color: black;
+    }
+}
